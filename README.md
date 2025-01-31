@@ -6,5 +6,5 @@ in this repo we will start to add a table with the course indexes and links to m
 | # |title|link|
 |-|-|-|
 |1|installation|[link](./classes/class1.md)|
-|2|readme|link|
+|2|HTML|[link](./classes/class2.md)|
 
