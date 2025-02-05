@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div{
+           border-radius: 10px; background-color: blue; padding: 15px;
+        }
+        input[type=email], select{
+            padding: 15px; border-radius: 10px; border-color:green; background-color:red;
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+        <br>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <br>
+        <label for="Date">Date</label>
+        <input type="date" id="date" name="date" placeholder=" Enter your date" required>
+        <br>
+        <br>
+        <label for="url">URL</label>
+        <input type="url" id="url" name="url" placeholder="Enter your URL" >
+        <br>
+        <br>
+        <button class="button">insert</button>
+        
+    </form>
+</body>
+</html>
