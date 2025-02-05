@@ -1,0 +1,59 @@
+h1{
+    color: blue; text-indent: 10px; letter-spacing: 10px; word-spacing: 3px;line-height: 10px;
+}
+td{
+    color: red;
+}
+li{
+    color: brown;
+}
+h2{
+    text-align: center;
+}
+#xxx{
+    text-align: center;
+}
+.button{
+    background-color: blue; padding: 15px; color: white; border: solid;
+}
+img{
+    clip-path: circle(50%); display: block; margin: auto;
+}
+p{
+    font-size: 20px; text-transform: capitalize; font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+#area1{
+    background-color: aqua;
+}
+#area1>p{
+    margin: 0px;
+}
+#area2{
+    background-color: blueviolet;
+}
+#menu{
+    list-style-type: none;
+    display: inline;
+}
+#menu>li{
+    display: inline;
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: green;
+}
+#menu>li:hover{
+    background-color: red;
+}
+header{
+    background-color:grey;
+    display: flex;
+    height: 100px;
+    }
+    nav{
+        margin-top: 20px;
+    }
