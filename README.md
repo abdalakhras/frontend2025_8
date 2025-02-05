@@ -7,4 +7,4 @@ in this repo we will start to add a table with the course indexes and links to m
 |-|-|-|
 |1|installation|[link](./classes/class1.md)|
 |2|HTML|[link](./classes/class2.md)|
-
+| 3 | CSS&Forms | [Link](./classes/class3.md) |
