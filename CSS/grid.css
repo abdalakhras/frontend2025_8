@@ -1,0 +1,13 @@
+.container{
+    display: grid; grid-template-columns: auto auto auto; grid-gap: 10px;
+    background-color: aqua; margin-left: 50px; margin-right: 50px; 
+}
+.item{
+    text-align: center; padding: 20px; background-color: red; color: aliceblue;
+}
+.item>button{
+    border: 5px solid; border-radius: 50px;
+}
+.item>button:hover{
+    color: blueviolet;
+}
