@@ -11,3 +11,6 @@
 .item>button:hover{
     color: blueviolet;
 }
+.item>img{
+    width: 100px; height: 150px;
+}
