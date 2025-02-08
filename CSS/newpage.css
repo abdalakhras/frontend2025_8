@@ -1,0 +1,33 @@
+h1{
+    border:darkorchid dotted; background-color:aqua;
+    /*position: relative;*/
+    /*left: 50px;
+    top: 100px;
+    padding: 50px;*/
+}
+.top{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    background-color: red;
+    z-index: 2;
+}
+.bottom{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    background-color: blue;
+    z-index: 1;
+}
+/*div dosen't effect the absolute position*/
+.border{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+#x1{
+    position: absolute;
+    bottom: 50px;
+    left: 65px;
+
+}
