@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+#nav{
+    grid-area: nav;
+    background-color: aqua;
+    height: 100px;
+}
+#nav>img{
+    width: 75px;
+    float: left;  /*doesn't get effectd by text alighment*/
+}
+#leftMenu{
+    grid-area: leftMenu;
+    background-color: red;
+}
+#leftMenu>button{
+     display: block;/*doesn't get effectd by text alighment*/
+     margin-top: 50px;
+}
+#rightMenu{
+    grid-area: rightMenu;
+    background-color: brown;
+}
+#rightMenu>ul>li{
+    list-style-type: none;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none; color: white;
+}
+#main{
+    grid-area: main;
+    background-color: blueviolet;
+    height: 500px;
+}
+#main>img{
+    width: 200px;
+   /* display: block; margin: auto;*/
+}
+#footer{
+    grid-area: footer;
+    background-color: green;
+    height: 50px;
+}
+#container{
+    display: grid;
+    grid-template-areas:'nav nav nav nav'
+    'leftMenu main main rightMenu'
+    'leftMenu main main rightMenu'
+    'leftMenu footer footer footer ';
+}
