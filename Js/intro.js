@@ -15,3 +15,10 @@ function contact(){
     contactbtn.style.backgroundColor='red'
     contactbtn.style.width='400px'
 }
+var btn1 = document.getElementById('btn1')
+function btn2(){
+    alert('also this btn not programmed yet')
+    btn1.innerHTML=("you already clicked")
+    btn1.style.width=('300px')
+    btn1.style.color=('red')
+}
