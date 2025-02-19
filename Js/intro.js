@@ -1,24 +1,30 @@
-console.log('this is my store');
-var x ='adam'; // global scope
-console.log(x);
-x = 1+5;
-console.log(x);
-let y = 123;
-console.log(y + x); // local scope
-const z = 5;
-console.log(z);
-var contactbtn = document.getElementById('contactbtn')
-console.log(contactbtn)
-function contact(){
-    alert('this is not programmed yet')
-    contactbtn.innerHTML='you clicked once'
-    contactbtn.style.backgroundColor='red'
-    contactbtn.style.width='400px'
+var klika = document.getElementById('klika1')
+//console.log(klika)
+
+function klik(){
+    console.log(1,2,3,4,5)
+    alert('this is an alert from clicking the button')
+    klika.style.backgroundColor=('red')
+    klika.style.width=('300px')
+    
 }
-var btn1 = document.getElementById('btn1')
-function btn2(){
-    alert('also this btn not programmed yet')
-    btn1.innerHTML=("you already clicked")
-    btn1.style.width=('300px')
-    btn1.style.color=('red')
+
+var elemnts = document.querySelectorAll('.form-check-label,.form-label,.form-text')
+
+function changeTheme(xyz){
+//console.log(xyz)
+document.body.style.backgroundColor=xyz
+
+//console.log(elemnts)
+if( xyz=='black'){
+    for(let i = 0; i< elemnts.length;i++ ){
+        //console.log(elemnts[i])
+        elemnts[i].style.color='white'
+    }
+}
+else{
+    for( let i = 0; i< elemnts.length;i++){
+        elemnts[i].style.color='blue'
+     }
+    }
 }

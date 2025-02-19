@@ -16,7 +16,7 @@ if(color=='black'){
     }
 }
 else{
-    for (let i = 0; i < elemnts.length;i++){
+    for (let i = 0; i < 4;i++){
         elemnts[i].style.backgroundColor = 'aqua'
         elemnts[i].style.border= '2px black solid'
         elemnts[i].style.color='black'
