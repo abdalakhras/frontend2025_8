@@ -18,7 +18,7 @@ document.body.style.backgroundColor=xyz
 //console.log(elemnts)
 if( xyz=='black'){
     for(let i = 0; i< elemnts.length;i++ ){
-        //console.log(elemnts[i])
+        console.log(elemnts[i])
         elemnts[i].style.color='white'
     }
 }

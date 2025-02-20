@@ -1,5 +1,7 @@
 var nav = document.getElementById('nav')
 //nav.innerText=('navigation bar')
+    nav.style.backgroundColor='red'
+    nav.style.backgroundColor='pink'
 
 function changeTheme(color){
     console.log(color);
@@ -21,6 +23,7 @@ else{
         elemnts[i].style.border= '2px black solid'
         elemnts[i].style.color='black'
     }
+    nav.style.backgroundColor='red'
 }
 
 }

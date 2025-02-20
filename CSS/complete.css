@@ -20,6 +20,7 @@ img{
     background-color:brown;
     transition: scale 1s;
     margin-right: 20px;
+    color:white;
 }
 .navigation>button:hover{
     background-color:burlywood;
@@ -37,6 +38,7 @@ h1{
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
     background-color: blueviolet;
+    border: 5px solid black;
 }
 .semicontainer{
     text-align: center;
