@@ -39,13 +39,17 @@ function changeTheme(color){
         for(i=0; i< elements.length;i++){
         elements[i].style.color='blue'
         elements[i].style.border='blue solid 5px'
-        container.style.backgroundColor= 'green'
+        container.style.backgroundColor= 'green' 
         }
 
     }
 
 }
 function klik(){
-    var klikk = document.getElementById('klikk')
+    //var klikk = document.getElementById('klikk')
+    //klikk.innerHTML='bye'
     alert('this is an alert not to leave this page')
+    var class1 = document.getElementsByClassName("header")
+    class1[0].style.backgroundColor="yellow"
 }
+         
