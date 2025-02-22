@@ -1,0 +1,8 @@
+#nav,#leftMenu,#main,#rightMenu,#footer{
+    background-color:black;
+    color: white;
+    border: 2px solid white;
+}
+body{
+    background-color: black;
+}

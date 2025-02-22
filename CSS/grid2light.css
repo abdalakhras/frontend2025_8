@@ -1,0 +1,5 @@
+#nav,#leftMenu,#main,#rightMenu,#footer{
+    background-color:aqua;
+    color: black;
+    border: 2px solid black;
+}
