@@ -23,24 +23,31 @@ function btn2(){
     btn1.style.color=('red')
 }
 function changeTheme(color){
-    console.log(color);
-    document.body.style.backgroundColor=color
-    var elements = document.querySelectorAll('.hh,.hero,.container')
+    //console.log(color);
+    //document.body.style.backgroundColor=color
+    //var elements = document.querySelectorAll('.hh,.hero,.container')
     var container = document.getElementById('cont1')
-    console.log(elements)
+    //console.log(elements)
+    var change = document.getElementById('changestyle')
     if(color=='black'){
-        for(i=0; i< elements.length;i++){
+        /*for(i=0; i< elements.length;i++){
             elements[i].style.color='white'
             elements[i].style.border='white solid 5px'
             container.style.backgroundColor= 'yellow'
-        }
+        }*/
+       console.log(change)
+       change.href='/CSS/completedark.css'
+       container.style.backgroundColor= 'yellow'
+        
     }
     else{
-        for(i=0; i< elements.length;i++){
+        /*for(i=0; i< elements.length;i++){
         elements[i].style.color='blue'
         elements[i].style.border='blue solid 5px'
         container.style.backgroundColor= 'green' 
-        }
+        }*/
+        change.href='/CSS/completelight.css'
+        container.style.backgroundColor= 'green'
 
     }
 

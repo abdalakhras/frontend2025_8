@@ -38,7 +38,7 @@ h1{
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
     background-color: blueviolet;
-    border: 5px solid black;
+    /*border: 5px solid black;*/
 }
 .semicontainer{
     text-align: center;

@@ -1,0 +1,10 @@
+.hh,.hero,.container{
+    color: blue;
+    border: 5px solid blue;
+}
+body{
+    background-color: pink;
+}
+.header{
+    background-color: violet;
+}
