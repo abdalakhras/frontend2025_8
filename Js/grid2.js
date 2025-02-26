@@ -38,15 +38,17 @@ var showmenu = document.getElementById('shomnu')
 function shorightmnu(){
     console.log(12)
     var rightMenu = document.getElementById('rightMenu')
+    var container = document.getElementById('container')
     if(rightMenu.style.display=='' || rightMenu.style.display=='none'){
         rightMenu.style.display='block'
-    
-    showmenu.innerText='hideMenu'
+        container.className='classContainer2'
+        showmenu.innerText='hideMenu'
     }
     else{
         console.log(12)
         rightMenu.style.display='none'
         showmenu.innerText='showMenu'
+        container.className='classContainer'
     }
     
 }

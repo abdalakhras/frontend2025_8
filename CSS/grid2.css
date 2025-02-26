@@ -58,7 +58,7 @@ a{
     border-radius: 20px;
     margin-top: 10px;
 }
-#container{
+.classContainer{
     display: grid;
     grid-template-areas:'nav nav nav nav'
     'leftMenu main main rightMenu'
@@ -73,7 +73,15 @@ a{
  body{
     background-color: green;
  }
- #container{
+ .classContainer{
+    display: grid;
+    grid-template-areas:'nav nav nav nav '
+        'rightMenu rightMenu rightMenu rightMenu'
+        'leftMenu main main main'
+        'leftMenu main main main'
+        'leftMenu footer footer footer ';
+}
+.classContainer2{
     display: grid;
     grid-template-areas:'nav nav nav nav '
         'rightMenu rightMenu rightMenu rightMenu'
@@ -94,22 +102,27 @@ a{
     
 }
 @media screen and (min-width : 501px) and (max-width : 800px){
+    .classContainer{
+        display: grid;
+            grid-template-areas:'nav nav nav nav '
+            'leftMenu main main main'
+            'leftMenu main main main'
+            'leftMenu footer footer footer ';
+    
+    }
     body{
         background-color: grey;
     }
-    #container{
+
+    .classContainer2{
         display: grid;
         grid-template-areas:'nav nav nav nav '
-        'leftMenu main main '
-        'leftMenu main main '
+        'leftMenu main main rightMenu'
+        'leftMenu main main rightMenu'
         'leftMenu footer footer footer ';
 }
 #rightMenu{
     display: none;
-}
-/* Make "main" start on row 2 column 2, and span 2 rows and 3 columns: */
-#main{
-    grid-area: 2 /2 /span 2 /span 3;
 }
 
 }
@@ -117,12 +130,19 @@ a{
     body{
         background-color: grey;
     }
-    #container{
+    .classContainer{
         display: grid;
         grid-template-areas:'nav nav nav nav '
         'leftMenu main main rightMenu'
         'leftMenu main main rightMenu'
         'leftMenu footer footer footer ';
+}
+.classContainer2{
+    display: grid;
+    grid-template-areas:'nav nav nav nav '
+    'leftMenu main main rightMenu'
+    'leftMenu main main rightMenu'
+    'leftMenu footer footer footer ';
 }
 #shomnu{
     display: none;
@@ -130,5 +150,8 @@ a{
 }
 body{
     background-color: white;
+}
+#righMenu{
+    display: block;
 }
 }
