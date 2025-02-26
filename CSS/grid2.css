@@ -75,37 +75,60 @@ a{
  }
  #container{
     display: grid;
-    grid-template-areas:'nav nav nav '
-    'leftMenu main main '
-    'leftMenu main main'
-    'leftMenu footer footer ';
-}
-#rightMenu{
-    display: none;
-}
-#shomnu{
-    display: none;
-}
-    
-}
-@media screen and (min-width : 501px){
-    body{
-        background-color: grey;
-    }
-    #container{
-        display: grid;
-        grid-template-areas:'nav nav nav nav '
+    grid-template-areas:'nav nav nav nav '
         'rightMenu rightMenu rightMenu rightMenu'
         'leftMenu main main main'
         'leftMenu main main main'
         'leftMenu footer footer footer ';
 }
 #rightMenu{
+    display:none;
     height: 100px;
-    display: none;
 }
 #rightMenu>ul>li{
     display: inline;
 }
+#shomnu{
+    display: inline;
+}
+    
+}
+@media screen and (min-width : 501px) and (max-width : 800px){
+    body{
+        background-color: grey;
+    }
+    #container{
+        display: grid;
+        grid-template-areas:'nav nav nav nav '
+        'leftMenu main main '
+        'leftMenu main main '
+        'leftMenu footer footer footer ';
+}
+#rightMenu{
+    display: none;
+}
+/* Make "main" start on row 2 column 2, and span 2 rows and 3 columns: */
+#main{
+    grid-area: 2 /2 /span 2 /span 3;
+}
 
+}
+@media screen and (min-width : 801px){
+    body{
+        background-color: grey;
+    }
+    #container{
+        display: grid;
+        grid-template-areas:'nav nav nav nav '
+        'leftMenu main main rightMenu'
+        'leftMenu main main rightMenu'
+        'leftMenu footer footer footer ';
+}
+#shomnu{
+    display: none;
+
+}
+body{
+    background-color: white;
+}
 }

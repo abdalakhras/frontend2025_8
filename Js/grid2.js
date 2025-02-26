@@ -38,7 +38,7 @@ var showmenu = document.getElementById('shomnu')
 function shorightmnu(){
     console.log(12)
     var rightMenu = document.getElementById('rightMenu')
-    if(rightMenu.style.display=='none'){
+    if(rightMenu.style.display=='' || rightMenu.style.display=='none'){
         rightMenu.style.display='block'
     
     showmenu.innerText='hideMenu'
