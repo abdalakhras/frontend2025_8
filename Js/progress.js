@@ -10,12 +10,14 @@ function prog(){
 
     if(width==100){
         clearInterval(x);
+        console.log('finish')
 
     }
     else{
         width++;
         elem.style.width= width + '%';
-        
+
+        console.log('progress')
         // elem.style.backgroundColor = 'red'
 
     }
