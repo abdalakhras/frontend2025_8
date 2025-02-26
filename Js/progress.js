@@ -13,9 +13,10 @@ function prog(){
 
     }
     else{
-       
-        elem.style.width= width + '%';
         width++;
+        elem.style.width= width + '%';
+        
+        // elem.style.backgroundColor = 'red'
 
     }
 }
