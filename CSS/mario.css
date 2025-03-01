@@ -1,0 +1,13 @@
+#container{
+    position: relative;
+    display: flex;
+}
+
+
+#mario{
+    position: absolute;
+    left: 0px; bottom: 65px;
+}
+#btn{
+    list-style: none;
+}

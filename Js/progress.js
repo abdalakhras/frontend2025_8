@@ -1,5 +1,5 @@
 // const button = document.querySelector('button')
-width = 0;
+width = 100;
 var x;
 var elem = document.getElementById('myBar');
 
@@ -8,13 +8,13 @@ function move(){
 }
 function prog(){
 
-    if(width==100){
+    if(width==0){
         clearInterval(x);
         console.log('finish')
 
     }
     else{
-        width++;
+        width--;
         elem.style.width= width + '%';
 
         console.log('progress')
