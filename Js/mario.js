@@ -10,6 +10,7 @@ function move(direction){
         mario.style.top = (positionTop - 10) + 'px'
         console.log(positionTop)
         console.log(direction)
+        //mario.src = "/images/GOW.png"
     }
     if(direction == 'down'){
         mario.style.top = (positionTop + 10) + 'px'
