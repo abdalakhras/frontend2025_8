@@ -33,11 +33,13 @@ myForm2.addEventListener("submit",function2)
 function function2(e){
 e.preventDefault()
 console.log(2)
+console.log(result)
 result.innerHTML = (num1.value * num2.value)
 num1.value = "" //clear input field
 num2.value = "" //clear input field
 result.style.color = "red"
 result.style.textAlign = "center"
+
 
 
 }
