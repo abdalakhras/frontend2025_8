@@ -29,6 +29,10 @@ function move(direction){
 
     }
     if(direction == 'left'){
+        if(positionLeft == -10){
+            alert(" can't move left")
+            return;
+        }
         mario.style.left = (positionLeft - 10) + 'px'
         console.log(positionLeft)
         console.log(direction)
@@ -38,3 +42,17 @@ function move(direction){
 
     }
 }
+
+document.addEventListener("keydown",function(event){
+   
+    if(event.key == "ArrowLeft"){
+        console.log(event.key)
+    move('left')    
+    }
+    if(event.key == 'ArrowRight'){
+        
+        move ('right')
+    }
+
+
+})
