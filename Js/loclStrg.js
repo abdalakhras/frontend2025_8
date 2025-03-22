@@ -18,7 +18,7 @@ function changeTheme(){
     
 
 
-if(localStorage.getItem('theme') === 'white'){    
+if(themeColor === 'white'){    
     localStorage.setItem('theme','black')
  body.style.backgroundColor= 'black'
  btn.innerHTML = 'light mode'
