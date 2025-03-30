@@ -42,41 +42,70 @@
     <br />
     <br />
     <!-- the Menu division -->
-    <div class="containerDivision divCenter">
+    <div class="containerDivision ">
         <br />
         <div class="menuImg">
             <img src="/images/MENU.png" width="100px" alt="" />
         </div>
+        <!-- this div (.carousel allows to carousel to next slide) -->
+        
         <!-- the Menu Grid -->
-        <div class="Menu">
+        <div class="Menu carousel-grid active ">
             <img src="/images/penne white.png" width="230px" height="190px" alt="" />
             <div class="menu-discription">
                 Penne white sauce delicious pasta with fresh tomato and broccoli with
                 cheese.
             </div>
             <div class="menu-price"><p>600.00 Rs</p></div>
+            <!-- the second coloumn -->
             <img class="xyz" src="/images/classic white.png"  alt="" />
             <div class="menu-discription">
                 Classic white sauce penne pasta delicious cheesy and fabulous in
                 taste.
             </div>
             <div class="menu-price"><p>600.00 Rs</p></div>
+            <!-- the third coloumn -->
             <img src="/images/red sauce.png" width="270px" height="190px" alt="" />
             <div class="menu-discription">
                 Red sauce spaghetti with chicken and shrimp
             </div>
             <div class="menu-price"><p>600.00 Rs</p></div>
         </div>
+        
+        <!-- this is the same grid but made for carousel, with new classes (.carousel .active) ,some changes in images and price will be made  -->
+        <div class="Menu carousel-grid ">
+            <img src="/images/Vegetable salad.png" width="230px" height="190px" alt="" />
+            <div class="menu-discription">
+                Penne white sauce delicious pasta with fresh tomato and broccoli with
+                cheese.
+            </div>
+            <div class="menu-price"><p>20.00 Jd</p></div>
+            <!-- the second coloumn -->
+            <img class="xyz" src="/images/Fattoush salad.png"  alt="" />
+            <div class="menu-discription">
+                Classic white sauce penne pasta delicious cheesy and fabulous in
+                taste.
+            </div>
+            <div class="menu-price"><p>22.00 Jd</p></div>
+            <!-- the third coloumn -->
+            <img src="/images/Egg vegi salad.png" width="270px" height="190px" alt="" />
+            <div class="menu-discription">
+                Red sauce spaghetti with chicken and shrimp
+            </div>
+            <div class="menu-price"><p>19.00 Jd</p></div>
+        </div>
+            <!-- this is the end of the 1st carousel -->
+             <!-- the carousel controllers -->
         <div class="controllers">
-            <button class="prev"><span ><i class="bi bi-chevron-left"></i></span></button>
+            <button class="prev" onclick="prevGrid()"><span ><i class="bi bi-chevron-left"></i></span></button>
             <ul class="numsList">
                 <li><button>1</button></li>
                 <li><button>2</button></li>
                 <li><button>3</button></li>
             </ul>
-          <button class="next"><span><i class="bi bi-chevron-right"></i></span></button>
+          <button class="next" onclick="nextGrid()"><span><i class="bi bi-chevron-right"></i></span></button>
         </div>
-         </div>
+        </div>
          <br>
          <br>
          <!-- the Gallery division -->

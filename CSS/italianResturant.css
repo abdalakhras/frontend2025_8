@@ -80,6 +80,11 @@
     justify-content: center;
   }
   /* this is the beggining of the Menu division */
+ 
+  /* .carousel{
+    position: relative;
+  } */
+
   .Menu {
       width: 90%;
       height: 700px;
@@ -89,6 +94,14 @@
     align-items: center;
     text-align: center;
   }
+  /* this section is for the carousel */
+  .carousel-grid {
+    display: none;
+  }
+  .active{
+    display: grid;
+  }
+  /* the end of carousel */
   .Menu img {
     margin: auto;
     
