@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #faf4f4;
+  }
+  /* this division is the container of all divisions */
+  .containerDivision {
+    /* if we make the width 75%-80% it would look more convinent and very much simlialr to Figma */
+    width: 90%;
+    height: 90%;
+    background-color: #dad5cb;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+  }
+  /* this is for the navigation bar  */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #d3cec2;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .nav .image {
+    width: 200px;
+    margin: 10px 0px 0px 20px;
+  }
+  .nav .fiveBtn {
+    list-style: none;
+  }
+  .nav .fiveBtn li {
+    display: inline;
+    margin: 0px 20px 0px 0px;
+  }
+  .nav .fiveBtn li .btn1 {
+    padding: 10px;
+    border: transparent;
+    background-color: transparent;
+    font-size: 17px;
+    cursor: pointer;
+    font-style: italic;
+  }
+  /* this is the beggining of the Big plate Image */
+  .plate-image-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 700px;
+    /* background-color: skyblue; */
+  }
+  .plate-image-grid .relative-plateImag {
+    position: relative;
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .plateImg {
+    /* the height and width are 80% of origina size picture from Figma */
+    width: 770px;
+    height: 555px;
+    /* margin-left: -180px ; */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+  }
+  .plate-image-grid .text {
+    margin-left: 30px;
+    /* margin: 200px 0px 0px 30px; */
+  }
+  .plate-image-grid .text h1 {
+    margin: 0px 0px 0px 0px;
+  }
+  /* there's a lot of ways to center the (Menu) image inside this div, but i just wanted to do the flex properety  */
+  .menuImg {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  /* this is the beggining of the Menu division */
+  .Menu {
+      width: 90%;
+      height: 700px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+  .Menu img {
+    margin: auto;
+    
+  }
+  /* this image is already (from figma) have a width different from the other 2 */
+  .xyz {
+    width:300px; height:250px; 
+    
+  }
+  .Menu .menu-discription {
+    display: flex;
+    width: 350px; height: 65px;
+    background-color:#d3cec2 ;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .Menu .menu-price {
+    font-size: 20px;
+    background-color: #d3cec2;
+    height: 40px;
+    border-radius: 20px;
+    width: 120px;
+    margin: 0px auto;
+  }
+  
+  .Menu .menu-price p {
+    margin: 10px 0px;
+  }
+  .controllers{
+    display: flex;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .numsList{
+    /* background-color: red; */
+    list-style: none; 
+    width: 60%; height: 30px; 
+    padding: 0px;
+    text-align: center;
+  
+  }
+  .numsList li {
+     display: inline;
+  }
+  .numsList li button {
+    font-size: 20px;
+    border-radius: 50%; border: transparent;
+    background-color: #d3cec2;
+    cursor: pointer;
+  }
+  .numsList li button:hover{
+    background-color: bisque;
+  }
+  .controllers .bi-chevron-left {
+    font-size: 30px;
+    
+  }
+  .controllers .bi-chevron-right {
+    font-size: 30px;
+  }
+  .controllers .prev {
+    border-radius: 50%; border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .controllers .next {
+    border-radius: 50%; border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .controllers .next:hover{
+    background-color: bisque;
+  }
+  .controllers .prev:hover{
+    background-color: bisque;
+  }
+  /* this is the Gallery division */
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 30px auto;
+    height: 800px;
+    width: 90%;
+  }
+  .gallery img {
+    margin: auto;
+    width: 330px; 
+    height: 320px;
+  }
+  /* the Form styling */
+  .containerDivision .containerForm {
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #C2C0C0;
+    margin: 30px auto;
+  }
+  /* this class is added specifically for this div to adjust the height only for this div */
+  .formHight{
+    height: 700px;
+  }
+  .containerDivision .containerForm form {
+    margin : auto 20px; 
+  }
+  /* form input styling */
+  .containerDivision .containerForm form input {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 10px 10px;
+    background-color: #F4EAEA;
+    
+  }
+  /* specifying the exact input */
+  #name {
+    padding: 5px; margin-left: 20px;
+  }
+  #phone {
+    padding: 5px;
+  }
+  #address{
+    margin-left: 15px;
+    padding: 20px;
+  }
+  #number{
+    padding: 5px;
+    width: 10%;
+  }
+  #date , #time {
+    width: 20%;
+  }
+  .submitBtn{
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+     background-color: #F4EAEA;
+     cursor: pointer;
+  }
+  /* the About-Us division */
+  
+  .containerDivision .text-Italic {
+    margin-top: 40px;
+    text-align: center;
+   }
+   .containerDivision .text-Italic p {
+    font-size: 20px; 
+    font-style: italic;
+    margin: 40px auto 0px auto;
+    width: 55%;
+    z-index: 2;
+  }
+   
+   .chefImag{
+    margin: -135px auto;
+    width: 50%;
+    /* background-color: red; */
+    z-index: -1;
+  }
+  .chefImag .chef {
+    width: 100%;
+    opacity: 45%;
+  }
+  
+  
+  
