@@ -1,11 +1,12 @@
+//this is to make Menu Gridslider
 var currentIndex = 0;
 
 var menuGrid = document.querySelectorAll('.carousel-grid')
 console.log(menuGrid)
 
-function showSlide(index){
+function showSlide(indix){
  menuGrid.forEach(elmnts => elmnts.classList.remove('active'))
- menuGrid[index].classList.add('active')
+ menuGrid[indix].classList.add('active')
  console.log(menuGrid)
 }
 
@@ -37,3 +38,55 @@ showSlide(currentIndex)
 console.log(currentIndex)
 }
 }
+// this part is for the numbers
+
+
+var btnOne = document.getElementById("btnOne")
+var btnTwo = document.getElementById("btnTwo")
+var btnThre = document.getElementById("btnThre")
+
+// btnOne.addEventListener('click', function(){
+// newIndex = 0
+// showSlide(newIndex)
+// })
+
+// btnTwo.addEventListener('click', function(){
+// newIndex = 1
+// showSlide(newIndex)
+// })
+
+//  btnThre.addEventListener('click', function(){
+//   newIndex = 2
+//   showSlide(newIndex)
+// })
+
+//     let numberSlider = Array.from(menuGrid) this is just to transform the nodelist o an array and was not used ib the code
+// console.log(numberSlider) 
+
+//trying alternative and more profissional way to change carousel using numbers
+
+let elements = document.querySelectorAll('.btn-index') //returns a NodeList
+console.log(elements)
+// we use for each to loop through every element in the NodeList
+//foreach method calls a function for each element in the NodeList can take up to three arguments: (element,index,array)
+// the element is to loop through each element , and the index is to set the index (position) of the element
+elements.forEach((element,index) => { element.addEventListener( "click" ,function (){
+
+  
+  console.log('hi')
+
+element.setAttribute ('data-index', index)  //setting (data-*) attribute and an index value to each element and 
+console.log(element)
+showSlide(index) // calling the function with the (index) as a parameter of the function
+
+
+})
+
+})
+
+
+
+
+
+ 
+ 
