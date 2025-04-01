@@ -286,13 +286,17 @@
       display:flex ;
     }
     
-     
-     .plate-image-grid .text h1 {
-      width: 100%; height: 50%;
+     .plate-image-grid .text{
+      height: 80%;
+      margin: 0px;
+      display:grid ; align-content: center;
      }
-     /* .relative-plateImag {
-      height: 50%;
-     } */
+     .plate-image-grid .text h1 {
+      
+     }
+     .plate-image-grid .relative-plateImag {
+      height: 80%;
+     }
     .relative-plateImag .plateImg{
       width: 145% ; height: 50%; 
     }
@@ -305,5 +309,14 @@
     .gallery img {
       width: 70%; height: 60%;
     }
+    .active {
+      display: block ; height: 80%;
+    }
+    .Menu img {
+      width: 50%;
+
+
+
    }
+
   
