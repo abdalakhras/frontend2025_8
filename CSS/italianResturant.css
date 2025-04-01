@@ -272,5 +272,38 @@
     opacity: 45%;
   }
   
-  
+
+  /* this is the media resposnive dividion */
+  @media screen and (max-width : 500px)  {
+    
+    .btn1{
+      display: none;
+    }
+    .toggle-btn {
+      display: flex;
+    }
+    .showBtns {
+      display:flex ;
+    }
+    
+     
+     .plate-image-grid .text h1 {
+      width: 100%; height: 50%;
+     }
+     /* .relative-plateImag {
+      height: 50%;
+     } */
+    .relative-plateImag .plateImg{
+      width: 145% ; height: 50%; 
+    }
+    .gallery{
+      grid-template-columns: auto auto;
+    }
+    .controllers{
+      width: 85%;
+    }
+    .gallery img {
+      width: 70%; height: 60%;
+    }
+   }
   
