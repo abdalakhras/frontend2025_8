@@ -84,7 +84,10 @@ showSlide(index) // calling the function with the (index) as a parameter of the 
 
 })
 
+document.getElementById("toggleButton").addEventListener('click', function(){
+document.getElementById("five-btns").classList.toggle('visible')
 
+})
 
 
 

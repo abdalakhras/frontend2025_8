@@ -42,13 +42,14 @@
     cursor: pointer;
     font-style: italic;
   }
-  .toggle-btn{
+  .nav .toggle-btn{
     padding: 10px;
     border: transparent;
     background-color: transparent;
     font-size: 17px;
     cursor: pointer;
     font-style: italic;
+    display: none;
   }
   /* this is the beggining of the Big plate Image */
   .plate-image-grid {
@@ -284,16 +285,24 @@
   /* this is the media resposnive dividion */
   @media screen and (max-width : 500px)  {
     
-    .btn1{
-      display: none;
-    }
-    .toggle-btn {
+    .nav .toggle-btn {
       display: flex;
     }
-    /* .showBtns {
-      display:flex ;
-    } */
-    
+      .fiveBtn{
+      display: none;
+      flex-direction: column; 
+      position: absolute; right: 50px; top: 50px;
+      opacity: 0.7;
+      height: 200px; width: 100px;
+      justify-content: center; align-items: center;
+      background-color: red;
+
+    }
+   
+    .visible {
+      display: flex; background-color: blue;
+    }
+
     .plate-image-grid {
       display: block;
       height: 500px;
