@@ -200,11 +200,22 @@
     height: 800px;
     width: 90%;
   }
+  .carousel-gallary{
+    display: none;
+  }
+  .show{
+    display: grid;
+  }
   .gallery img {
     margin: auto;
     width: 330px; 
     height: 320px;
   }
+
+.dot{
+  height: 3px; width: 30px; background-color :black;
+}
+
   /* the Form styling */
   .containerDivision .containerForm {
     width: 70%;
@@ -344,8 +355,38 @@
     .containerDivision .containerForm {
       width: 100%;
     }
-
-
-   
+    #date , #time {
+      width: 40%;
+    }
+    #number{
+      width: 20%;
+    }
   }
-  
+
+  @media screen and (min-width : 501px) and (max-width:1150px) {
+
+    .active {
+      display: block ; height: 100%; width: 100%;
+    }
+    .Menu .menu-discription{
+      width: 70%; background-color: red;
+      margin: auto; justify-content: center;
+    }
+    .Menu img {
+      width: 50%; height: 40%;
+    }
+    .gallery{
+      grid-template-columns: auto auto;
+      height: 90%;
+    }
+    .controllers{
+      width: 85%;
+    }
+    .gallery img {
+      width: 80%; height: 70%;
+      /* object-fit: cover; */
+    }
+
+
+
+  }
