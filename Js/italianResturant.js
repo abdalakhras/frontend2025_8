@@ -5,7 +5,8 @@ var menuGrid = document.querySelectorAll('.carousel-grid')
 console.log(menuGrid)
 
 function showSlide(indix){
- menuGrid.forEach(elmnts => elmnts.classList.remove('active'))
+ menuGrid.forEach(elmnts => 
+ elmnts.classList.remove('active'))
  menuGrid[indix].classList.add('active')
  console.log(menuGrid)
 }
@@ -70,9 +71,9 @@ console.log(elements)
 // we use for each to loop through every element in the NodeList
 //foreach method calls a function for each element in the NodeList can take up to three arguments: (element,index,array)
 // the element is to loop through each element , and the index is to set the index (position) of the element
-elements.forEach((element,index) => { element.addEventListener( "click" ,function (){
+elements.forEach((element,index) => { 
+  element.addEventListener( "click" ,function (){
 
-  
   console.log('hi')
 
 element.setAttribute ('data-index', index)  //setting (data-*) attribute and an index value to each element and 
@@ -84,12 +85,55 @@ showSlide(index) // calling the function with the (index) as a parameter of the 
 
 })
 
+// this is for the toggle button in media screen
 document.getElementById("toggleButton").addEventListener('click', function(){
 document.getElementById("five-btns").classList.toggle('visible')
 
 })
 
+// this is for the gallery grid 
+var previous = document.getElementById('previous')
+var next = document.getElementById('next')
+ let galleryIndx = 0
 
+var galleryGrid = document.querySelectorAll('.gallery')
+console.log(galleryGrid)
+
+function showGallery(indx){
+galleryGrid.forEach(elem => {
+  elem.classList.remove('show')
+  galleryGrid[indx].classList.add('show')
+
+  })
+}
+
+function prevGallery(){
+  if(galleryIndx == 0 ){
+    galleryIndx = galleryGrid.length - 1
+    showGallery(galleryIndx)
+    console.log(galleryIndx)
+  }
+  else{
+    galleryIndx = galleryIndx - 1
+    showGallery(galleryIndx)
+    console.log(galleryIndx)
+  }
+ 
+}
+
+function nextGallery(){
+if(galleryIndx == 0 || galleryIndx < galleryGrid.length-1){
+  galleryIndx = galleryIndx + 1
+  showGallery(galleryIndx)
+  console.log(galleryIndx)
+}
+else{
+  galleryIndx = 0
+  showGallery(galleryIndx)
+  console.log(galleryIndx)
+}
+
+}
 
  
  
