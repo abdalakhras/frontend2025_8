@@ -414,3 +414,9 @@
     }
 
   } 
+  .highLight{
+    background-color: red;
+  }
+  .num-color{
+    color: red;
+  }

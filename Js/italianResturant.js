@@ -17,12 +17,14 @@ function prevGrid(){
     currentIndex = menuGrid.length - 1 
     showSlide(currentIndex)
     console.log(currentIndex)
+    changeNumcolor(currentIndex)
   }
 
 else{
     currentIndex = currentIndex -1 
     showSlide(currentIndex)
     console.log(currentIndex)
+    changeNumcolor(currentIndex)
 }
 }
 
@@ -31,12 +33,13 @@ if( currentIndex == menuGrid.length -1 ) {
     currentIndex = 0
     console.log(currentIndex)
     showSlide(currentIndex)
-    
+    changeNumcolor(currentIndex)
 }
 else{
 currentIndex = currentIndex + 1
 showSlide(currentIndex)
 console.log(currentIndex)
+changeNumcolor(currentIndex)
 }
 }
 // this part is for the numbers
@@ -66,8 +69,9 @@ var btnThre = document.getElementById("btnThre")
 
 //trying alternative and more profissional way to change carousel using numbers
 
-let elements = document.querySelectorAll('.btn-index') //returns a NodeList
+var elements = document.querySelectorAll('.btn-index') //returns a NodeList
 console.log(elements)
+
 // we use for each to loop through every element in the NodeList
 //foreach method calls a function for each element in the NodeList can take up to three arguments: (element,index,array)
 // the element is to loop through each element , and the index is to set the index (position) of the element
@@ -80,16 +84,32 @@ element.setAttribute ('data-index', index)  //setting (data-*) attribute and an 
 console.log(element)
 showSlide(index) // calling the function with the (index) as a parameter of the function
 
-
 })
 
 })
+
+// this is for the background Color of the numbers
+function changeNumcolor(colorx){
+ elements.forEach(elemnt=> 
+  elemnt.classList.remove('num-color'))
+  
+  elements[colorx].classList.add('num-color')
+  console.log(elements)
+}
+
+
+
+
+
+
 
 // this is for the toggle button in media screen
 document.getElementById("toggleButton").addEventListener('click', function(){
 document.getElementById("five-btns").classList.toggle('visible')
 
 })
+
+
 
 // this is for the gallery grid 
 var previous = document.getElementById('previous')
@@ -112,11 +132,13 @@ function prevGallery(){
     galleryIndx = galleryGrid.length - 1
     showGallery(galleryIndx)
     console.log(galleryIndx)
+    changeBkGroundClolor(galleryIndx)
   }
   else{
     galleryIndx = galleryIndx - 1
     showGallery(galleryIndx)
     console.log(galleryIndx)
+    changeBkGroundClolor(galleryIndx)
   }
  
 }
@@ -126,23 +148,31 @@ if(galleryIndx == 0 || galleryIndx < galleryGrid.length-1){
   galleryIndx = galleryIndx + 1
   showGallery(galleryIndx)
   console.log(galleryIndx)
+  changeBkGroundClolor(galleryIndx)
 }
 else{
   galleryIndx = 0
   showGallery(galleryIndx)
   console.log(galleryIndx)
+  changeBkGroundClolor(galleryIndx)
 }
 
 }
 
-// now the background of pointers
+// now the background of pointers in the gallery grid
 
 
-let pointers = document.querySelectorAll('.dot')
-pointers.forEach(elimnt => {
-console.log(elimnt)
-dot.style.backgroundcolor = 'red'
+var pointers = document.querySelectorAll('.dot')
+console.log(pointers)
 
-})
+function changeBkGroundClolor(color){
+
+pointers.forEach(elimnt => 
+  elimnt.classList.remove('highLight'))
+pointers[color].classList.add("highLight")
+// console.log(pointers)
+}
  
- 
+
+
+
