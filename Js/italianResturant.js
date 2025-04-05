@@ -137,17 +137,12 @@ else{
 
 // now the background of pointers
 
-function chngBackgroundColor (WHT){
-  
-document.style.backgroundcolor = 'red'
-
-}
 
 let pointers = document.querySelectorAll('.dot')
-pointers.forEach((elimnt,index) => {
-  elimnt.setAttribute('data-dot',index)
+pointers.forEach(elimnt => {
 console.log(elimnt)
- chngBackgroundColor(index)
+dot.style.backgroundcolor = 'red'
+
 })
  
  
